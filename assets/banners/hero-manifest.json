@@ -3,7 +3,7 @@
     "file": "assets/banners/hero-banner-home.webp",
     "page": "home",
     "theme": "casino-bonus",
-    "bytes": 81678
+    "bytes": 81222
   },
   {
     "file": "assets/banners/hero-banner-kazino.webp",
@@ -21,7 +21,7 @@
     "file": "assets/banners/hero-banner-live-kazino.webp",
     "page": "live-kazino",
     "theme": "casino-bonus",
-    "bytes": 81678
+    "bytes": 81222
   },
   {
     "file": "assets/banners/hero-banner-crash.webp",
@@ -39,7 +39,7 @@
     "file": "assets/banners/hero-banner-promo-kod.webp",
     "page": "promo-kod",
     "theme": "casino-bonus",
-    "bytes": 81678
+    "bytes": 81222
   },
   {
     "file": "assets/banners/hero-banner-mobil.webp",
@@ -51,7 +51,7 @@
     "file": "assets/banners/hero-banner-royxatdan-otish.webp",
     "page": "royxatdan-otish",
     "theme": "casino-bonus",
-    "bytes": 82812
+    "bytes": 82704
   },
   {
     "file": "assets/banners/hero-banner-kirish.webp",

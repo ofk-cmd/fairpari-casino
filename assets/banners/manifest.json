@@ -30,6 +30,16 @@
     "page": "home"
   },
   {
+    "file": "assets/banners/home-s07.webp",
+    "type": "section",
+    "page": "home"
+  },
+  {
+    "file": "assets/banners/home-s08.webp",
+    "type": "section",
+    "page": "home"
+  },
+  {
     "file": "assets/banners/kazino-s01.webp",
     "type": "section",
     "page": "kazino"
@@ -55,6 +65,11 @@
     "page": "kazino"
   },
   {
+    "file": "assets/banners/kazino-s06.webp",
+    "type": "section",
+    "page": "kazino"
+  },
+  {
     "file": "assets/banners/slotlar-s01.webp",
     "type": "section",
     "page": "slotlar"
@@ -75,6 +90,11 @@
     "page": "slotlar"
   },
   {
+    "file": "assets/banners/slotlar-s05.webp",
+    "type": "section",
+    "page": "slotlar"
+  },
+  {
     "file": "assets/banners/live-kazino-s01.webp",
     "type": "section",
     "page": "live-kazino"
@@ -91,6 +111,11 @@
   },
   {
     "file": "assets/banners/live-kazino-s04.webp",
+    "type": "section",
+    "page": "live-kazino"
+  },
+  {
+    "file": "assets/banners/live-kazino-s05.webp",
     "type": "section",
     "page": "live-kazino"
   },
@@ -140,6 +165,11 @@
     "page": "kazino-bonuslari"
   },
   {
+    "file": "assets/banners/kazino-bonuslari-s05.webp",
+    "type": "section",
+    "page": "kazino-bonuslari"
+  },
+  {
     "file": "assets/banners/promo-kod-s01.webp",
     "type": "section",
     "page": "promo-kod"
@@ -156,6 +186,11 @@
   },
   {
     "file": "assets/banners/promo-kod-s04.webp",
+    "type": "section",
+    "page": "promo-kod"
+  },
+  {
+    "file": "assets/banners/promo-kod-s05.webp",
     "type": "section",
     "page": "promo-kod"
   },
@@ -180,6 +215,11 @@
     "page": "mobil"
   },
   {
+    "file": "assets/banners/mobil-s05.webp",
+    "type": "section",
+    "page": "mobil"
+  },
+  {
     "file": "assets/banners/royxatdan-otish-s01.webp",
     "type": "section",
     "page": "royxatdan-otish"
@@ -200,6 +240,11 @@
     "page": "royxatdan-otish"
   },
   {
+    "file": "assets/banners/royxatdan-otish-s05.webp",
+    "type": "section",
+    "page": "royxatdan-otish"
+  },
+  {
     "file": "assets/banners/kirish-s01.webp",
     "type": "section",
     "page": "kirish"
@@ -216,6 +261,11 @@
   },
   {
     "file": "assets/banners/kirish-s04.webp",
+    "type": "section",
+    "page": "kirish"
+  },
+  {
+    "file": "assets/banners/kirish-s05.webp",
     "type": "section",
     "page": "kirish"
   },
@@ -245,6 +295,11 @@
     "page": "tolov"
   },
   {
+    "file": "assets/banners/tolov-s06.webp",
+    "type": "section",
+    "page": "tolov"
+  },
+  {
     "file": "assets/banners/pul-yechish-s01.webp",
     "type": "section",
     "page": "pul-yechish"
@@ -270,6 +325,11 @@
     "page": "pul-yechish"
   },
   {
+    "file": "assets/banners/pul-yechish-s06.webp",
+    "type": "section",
+    "page": "pul-yechish"
+  },
+  {
     "file": "assets/banners/verifikatsiya-s01.webp",
     "type": "section",
     "page": "verifikatsiya"
@@ -286,6 +346,11 @@
   },
   {
     "file": "assets/banners/verifikatsiya-s04.webp",
+    "type": "section",
+    "page": "verifikatsiya"
+  },
+  {
+    "file": "assets/banners/verifikatsiya-s05.webp",
     "type": "section",
     "page": "verifikatsiya"
   },
@@ -311,6 +376,11 @@
   },
   {
     "file": "assets/banners/sharhlar-s05.webp",
+    "type": "section",
+    "page": "sharhlar"
+  },
+  {
+    "file": "assets/banners/sharhlar-s06.webp",
     "type": "section",
     "page": "sharhlar"
   },
@@ -361,6 +431,11 @@
   },
   {
     "file": "assets/banners/litsenziya-s05.webp",
+    "type": "section",
+    "page": "litsenziya"
+  },
+  {
+    "file": "assets/banners/litsenziya-s06.webp",
     "type": "section",
     "page": "litsenziya"
   }

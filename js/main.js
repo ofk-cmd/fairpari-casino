@@ -21,14 +21,12 @@
   faqItems.forEach(function (item, index) {
     var btn = item.querySelector(".faq-item__question");
     if (!btn) return;
-
     if (index === 0) {
       item.classList.add("is-open");
       btn.setAttribute("aria-expanded", "true");
     } else {
       btn.setAttribute("aria-expanded", "false");
     }
-
     btn.addEventListener("click", function () {
       var isOpen = item.classList.contains("is-open");
       faqItems.forEach(function (other) {
@@ -47,15 +45,41 @@
   if (backTop) {
     window.addEventListener("scroll", function () {
       backTop.classList.toggle("is-visible", window.scrollY > 600);
-    });
+    }, { passive: true });
     backTop.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
 
+  var progress = document.querySelector(".scroll-progress");
+  if (progress) {
+    window.addEventListener("scroll", function () {
+      var doc = document.documentElement;
+      var pct = (window.scrollY / Math.max(doc.scrollHeight - doc.clientHeight, 1)) * 100;
+      progress.style.width = pct + "%";
+    }, { passive: true });
+  }
+
+  if ("IntersectionObserver" in window) {
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll(
+      ".section, .hub-card, .promo-block, .related-link, .winner-card, .seo-block--rich"
+    ).forEach(function (el) {
+      el.classList.add("reveal-on-scroll");
+      revealObs.observe(el);
+    });
+  }
+
   var stickyCta = document.getElementById("sticky-cta");
   if (stickyCta) {
-    var stickyKey = "dawo_sticky_dismissed";
+    var stickyKey = "casino_sticky_dismissed";
     if (sessionStorage.getItem(stickyKey) === "1") {
       stickyCta.classList.add("is-hidden");
     } else {
@@ -87,7 +111,6 @@
     var next = root.querySelector(".promo-carousel__nav--next");
     var index = 0;
     var timer;
-
     function show(i) {
       index = (i + slides.length) % slides.length;
       slides.forEach(function (s, n) {
@@ -97,14 +120,12 @@
         d.classList.toggle("is-active", n === index);
       });
     }
-
     function restart() {
       clearInterval(timer);
       timer = setInterval(function () {
         show(index + 1);
       }, 6000);
     }
-
     if (prev) prev.addEventListener("click", function () { show(index - 1); restart(); });
     if (next) next.addEventListener("click", function () { show(index + 1); restart(); });
     dots.forEach(function (dot) {
@@ -117,14 +138,32 @@
     restart();
   });
 
+  document.querySelectorAll("[data-bonus-calc]").forEach(function (root) {
+    var range = root.querySelector(".bonus-calc__range");
+    var depOut = root.querySelector(".bonus-calc__dep");
+    var bonusOut = root.querySelector(".bonus-calc__out");
+    if (!range || !depOut || !bonusOut) return;
+    function fmt(n) {
+      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    function update() {
+      var dep = parseInt(range.value, 10) || 0;
+      depOut.textContent = fmt(dep) + " UZS";
+      var bonus = Math.round(dep * 0.3);
+      var fs = Math.min(150, Math.max(5, Math.round(dep / 50000)));
+      bonusOut.textContent = fmt(bonus) + " UZS + " + fs + " FS";
+    }
+    range.addEventListener("input", update);
+    update();
+  });
+
   var promoCodeEl = document.getElementById("site-promo-code");
   var promoBadge = document.querySelector("[data-promo-badge]");
   if (promoCodeEl && promoBadge) {
     promoBadge.textContent = promoCodeEl.textContent.trim();
   }
 
-  var copyPromoBtns = document.querySelectorAll(".js-copy-promo");
-  copyPromoBtns.forEach(function (btn) {
+  document.querySelectorAll(".js-copy-promo").forEach(function (btn) {
     var defaultLabel = btn.textContent;
     btn.addEventListener("click", function (event) {
       event.preventDefault();
@@ -133,7 +172,6 @@
       var codeEl = targetId ? document.getElementById(targetId) : null;
       var code = codeEl ? codeEl.textContent.trim() : "";
       if (!code) return;
-
       function onCopied() {
         btn.classList.add("is-copied");
         btn.textContent = "Nusxalandi!";
@@ -142,7 +180,6 @@
           btn.textContent = defaultLabel;
         }, 1800);
       }
-
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(code).then(onCopied).catch(function () {
           window.prompt("Promo kodni nusxalang:", code);
@@ -152,5 +189,4 @@
       }
     });
   });
-
 })();
