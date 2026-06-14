@@ -55,7 +55,7 @@
 
   var stickyCta = document.getElementById("sticky-cta");
   if (stickyCta) {
-    var stickyKey = "dawo_sticky_dismissed";
+    var stickyKey = "casino_sticky_dismissed";
     if (sessionStorage.getItem(stickyKey) === "1") {
       stickyCta.classList.add("is-hidden");
     } else {
