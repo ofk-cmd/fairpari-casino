@@ -115,6 +115,16 @@
     "page": "home"
   },
   {
+    "file": "assets/banners/home-s24.webp",
+    "type": "section",
+    "page": "home"
+  },
+  {
+    "file": "assets/banners/home-s25.webp",
+    "type": "section",
+    "page": "home"
+  },
+  {
     "file": "assets/banners/kazino-s01.webp",
     "type": "section",
     "page": "kazino"
@@ -171,6 +181,11 @@
   },
   {
     "file": "assets/banners/kazino-s12.webp",
+    "type": "section",
+    "page": "kazino"
+  },
+  {
+    "file": "assets/banners/kazino-s13.webp",
     "type": "section",
     "page": "kazino"
   },
@@ -420,6 +435,21 @@
     "page": "mobil"
   },
   {
+    "file": "assets/banners/mobil-s17.webp",
+    "type": "section",
+    "page": "mobil"
+  },
+  {
+    "file": "assets/banners/mobil-s18.webp",
+    "type": "section",
+    "page": "mobil"
+  },
+  {
+    "file": "assets/banners/mobil-s19.webp",
+    "type": "section",
+    "page": "mobil"
+  },
+  {
     "file": "assets/banners/royxatdan-otish-s01.webp",
     "type": "section",
     "page": "royxatdan-otish"
@@ -656,6 +686,11 @@
   },
   {
     "file": "assets/banners/tolov-s15.webp",
+    "type": "section",
+    "page": "tolov"
+  },
+  {
+    "file": "assets/banners/tolov-s16.webp",
     "type": "section",
     "page": "tolov"
   },
