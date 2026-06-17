@@ -1,0 +1,214 @@
+{
+  "version": "2026-06-16",
+  "project_id": "fairpari-casino-uz-com",
+  "brand": "FairPari",
+  "role": "casino-only affiliate guide",
+  "fact_sheet_ref": "CONTENT-TZ-master.md#3-единый-fact-sheet",
+  "locales": ["uz", "ru"],
+  "pages": [
+    {
+      "id": "home",
+      "uz": { "slug": "", "path": "/", "primary_key": "fairpari kazino uz" },
+      "ru": { "slug": "", "path": "/ru/", "primary_key": "fairpari казино uz" },
+      "intent": "Обзор бренда FairPari для игроков UZ — казино, бонусы, платежи, мобилка",
+      "word_count": { "uz": "2800-3500", "ru": "2800-3500" },
+      "sections": [
+        "hero + stats (6 chips, casino-only)",
+        "brand passport table (10+ rows)",
+        "features 8 cards (no sport card)",
+        "top slots grid 8 games",
+        "promo banners x3",
+        "seo-expansion 10-12 H2",
+        "pros-cons",
+        "reviews patterns",
+        "faq 8-10"
+      ],
+      "required_tables": ["brand_passport", "welcome_summary", "payments_overview"],
+      "forbidden": ["sport welcome", "53 sport", "APL", "fairpari bet spam"],
+      "title_formula": {
+        "uz": "FairPari kazino UZ — slotlar, live va crash | welcome 20.2M UZS",
+        "ru": "FairPari казино UZ — слоты, live и crash | welcome 20.2M UZS"
+      },
+      "h1_formula": {
+        "uz": "FairPari kazino — O'zbekistonda slotlar, live va crash",
+        "ru": "FairPari казино UZ — слоты, live и crash онлайн"
+      },
+      "lead_must_include": ["12 000+", "20 200 000 UZS + 150 FS", "Humo/Click/Payme", "mustaqil yo'riqnoma"]
+    },
+    {
+      "id": "kazino",
+      "uz": { "slug": "kazino", "path": "/kazino/", "primary_key": "fairpari kazino" },
+      "ru": { "slug": "kazino", "path": "/ru/kazino/", "primary_key": "fairpari казино разделы" },
+      "intent": "Как устроен казино-lobby: слоты, live, crash, RNG",
+      "word_count": { "uz": "900-1200", "ru": "900-1200" },
+      "sections": ["hero", "lobby map table", "how to find Aviator", "demo vs real", "faq 5"],
+      "required_tables": ["lobby_sections"],
+      "forbidden": ["sport"]
+    },
+    {
+      "id": "slots",
+      "uz": { "slug": "slotlar", "path": "/slotlar/", "primary_key": "fairpari slotlar" },
+      "ru": { "slug": "sloty", "path": "/ru/sloty/", "primary_key": "fairpari слоты" },
+      "intent": "Каталог слотов, провайдеры, популярные игры UZ, demo",
+      "word_count": { "uz": "1000-1400", "ru": "1000-1400" },
+      "sections": ["hero", "providers table", "top 8 slots cards", "volatility explainer", "wagering eligible slots note", "faq 5"],
+      "required_tables": ["providers", "slot_categories"],
+      "must_mention_games": ["Gates of Olympus", "Sweet Bonanza", "Sugar Rush", "The Dog House", "Book of Dead"]
+    },
+    {
+      "id": "live",
+      "uz": { "slug": "live-kazino", "path": "/live-kazino/", "primary_key": "fairpari live kazino" },
+      "ru": { "slug": "live-kazino", "path": "/ru/live-kazino/", "primary_key": "fairpari live казино" },
+      "intent": "Live-дилеры Evolution, game shows, лимиты UZS",
+      "word_count": { "uz": "900-1200", "ru": "900-1200" },
+      "sections": ["hero", "games table", "Evolution focus", "mobile live", "bonus wagering exclusion for live", "faq 4"],
+      "required_tables": ["live_games"],
+      "must_mention": ["Lightning Roulette", "Crazy Time", "ruletka", "bakkara"]
+    },
+    {
+      "id": "crash",
+      "uz": { "slug": "crash", "path": "/crash/", "primary_key": "fairpari aviator" },
+      "ru": { "slug": "crash", "path": "/ru/crash/", "primary_key": "fairpari aviator crash" },
+      "intent": "Aviator Spribe, cash out, ответственная игра",
+      "word_count": { "uz": "800-1100", "ru": "800-1100" },
+      "sections": ["hero", "mechanics 30 sec", "auto-cashout", "no predictors disclaimer", "faq 4"],
+      "required_tables": ["crash_games"],
+      "forbidden": ["хаки", "схемы", "предиктор"]
+    },
+    {
+      "id": "bonuses",
+      "uz": { "slug": "kazino-bonuslari", "path": "/kazino-bonuslari/", "primary_key": "fairpari kazino bonusi" },
+      "ru": { "slug": "bonusy-kazino", "path": "/ru/bonusy-kazino/", "primary_key": "fairpari бонус казино" },
+      "intent": "Welcome 4 depozit, wagering, cashback, reload",
+      "word_count": { "uz": "1200-1600", "ru": "1200-1600" },
+      "sections": ["hero", "welcome table 4 rows", "wagering explainer", "max bet warning", "cashback", "faq 6"],
+      "required_tables": ["welcome_stages", "wagering_rules"],
+      "anchor_ids": { "wagering": "wagering-qoidalari" },
+      "must_numbers": ["20 200 000 UZS", "150 FS", "×35", "7 kun", "65 000 UZS max stavka"]
+    },
+    {
+      "id": "promo",
+      "uz": { "slug": "promo-kod", "path": "/promo-kod/", "primary_key": "fairpari promo kod fa_1635" },
+      "ru": { "slug": "promokod", "path": "/ru/promokod/", "primary_key": "fairpari промокод fa_1635" },
+      "intent": "Где ввести fa_1635, ошибки, copy block",
+      "word_count": { "uz": "700-900", "ru": "700-900" },
+      "sections": ["hero", "copyable code fa_1635", "registration vs cashier", "common mistakes", "faq 4"],
+      "required_tables": ["promo_steps"]
+    },
+    {
+      "id": "mobile",
+      "uz": { "slug": "mobil", "path": "/mobil/", "primary_key": "fairpari kazino apk" },
+      "ru": { "slug": "skachat", "path": "/ru/skachat/", "primary_key": "fairpari скачать apk" },
+      "intent": "APK Android + PWA iOS, только fairpari.com/uz/mobile",
+      "word_count": { "uz": "1000-1300", "ru": "1000-1300" },
+      "sections": ["hero", "android steps 4", "ios pwa steps 4", "requirements table", "app vs browser table", "security warning mirrors", "faq 5"],
+      "required_tables": ["apk_requirements", "app_vs_mobile_web"],
+      "must_numbers": ["APK 2.4.18", "Android 6.0+", "RAM 2 GB", "150 MB"]
+    },
+    {
+      "id": "registration",
+      "uz": { "slug": "royxatdan-otish", "path": "/royxatdan-otish/", "primary_key": "fairpari ro'yxatdan o'tish" },
+      "ru": { "slug": "registratsiya", "path": "/ru/registratsiya/", "primary_key": "fairpari регистрация" },
+      "intent": "4 способа регистрации, UZS, casino welcome choice",
+      "word_count": { "uz": "900-1200", "ru": "900-1200" },
+      "sections": ["hero", "4 methods H3 each with 4 steps", "screenshot ref", "promo at signup", "faq 5"],
+      "required_tables": ["registration_methods"],
+      "forbidden": ["sport welcome choice as equal option — mention only casino"]
+    },
+    {
+      "id": "login",
+      "uz": { "slug": "kirish", "path": "/kirish/", "primary_key": "fairpari kirish" },
+      "ru": { "slug": "vhod", "path": "/ru/vhod/", "primary_key": "fairpari вход" },
+      "intent": "Login, password reset, 2FA, phishing warning",
+      "word_count": { "uz": "700-900", "ru": "700-900" },
+      "sections": ["hero", "login steps", "password recovery", "fake sites warning", "faq 4"],
+      "required_tables": ["login_methods"]
+    },
+    {
+      "id": "deposit",
+      "uz": { "slug": "tolov", "path": "/tolov/", "primary_key": "fairpari to'lov depozit" },
+      "ru": { "slug": "oplata", "path": "/ru/oplata/", "primary_key": "fairpari депозит uz" },
+      "intent": "Humo, Click, Payme, min dep, speed",
+      "word_count": { "uz": "900-1200", "ru": "900-1200" },
+      "sections": ["hero", "methods table", "min deposit", "first deposit for bonus", "faq 5"],
+      "required_tables": ["payment_methods_deposit"],
+      "must_numbers": ["~130 000 UZS min"]
+    },
+    {
+      "id": "withdraw",
+      "uz": { "slug": "pul-yechish", "path": "/pul-yechish/", "primary_key": "fairpari pul yechish" },
+      "ru": { "slug": "vyvod", "path": "/ru/vyvod/", "primary_key": "fairpari вывод uz" },
+      "intent": "Сроки вывода, KYC link, same method rule",
+      "word_count": { "uz": "900-1200", "ru": "900-1200" },
+      "sections": ["hero", "timeline table", "KYC prerequisite", "bonus lock warning", "faq 5"],
+      "required_tables": ["withdraw_methods_timeline"],
+      "must_numbers": ["~50 000 UZS min withdraw", "1-24 soat / 1-3 kun"]
+    },
+    {
+      "id": "kyc",
+      "uz": { "slug": "verifikatsiya", "path": "/verifikatsiya/", "primary_key": "fairpari verifikatsiya kyc" },
+      "ru": { "slug": "verifikatsiya", "path": "/ru/verifikatsiya/", "primary_key": "fairpari верификация" },
+      "intent": "Документы, сроки, отказ",
+      "word_count": { "uz": "800-1000", "ru": "800-1000" },
+      "sections": ["hero", "documents list", "steps table", "rejection reasons", "faq 4"],
+      "required_tables": ["kyc_documents"]
+    },
+    {
+      "id": "reviews",
+      "uz": { "slug": "sharhlar", "path": "/sharhlar/", "primary_key": "fairpari kazino sharhlari" },
+      "ru": { "slug": "otzyvy", "path": "/ru/otzyvy/", "primary_key": "fairpari отзывы казино" },
+      "intent": "Паттерны отзывов, не fake rating",
+      "word_count": { "uz": "800-1000", "ru": "800-1000" },
+      "sections": ["hero", "positive patterns", "negative patterns", "pros-cons repeat", "faq 4"],
+      "forbidden": ["5/5 rating", "выдуманные имена с суммами как доказательство"]
+    },
+    {
+      "id": "mirror",
+      "uz": { "slug": "zerkalo", "path": "/zerkalo/", "primary_key": "fairpari zerkalo" },
+      "ru": { "slug": "zerkalo", "path": "/ru/zerkalo/", "primary_key": "fairpari зеркало" },
+      "intent": "Безопасный доступ, SSL check, только official",
+      "word_count": { "uz": "600-800", "ru": "600-800" },
+      "sections": ["hero", "how to verify URL", "phishing signs", "faq 4"],
+      "required_tables": []
+    },
+    {
+      "id": "license",
+      "uz": { "slug": "litsenziya", "path": "/litsenziya/", "primary_key": "fairpari litsenziya" },
+      "ru": { "slug": "litsenziya", "path": "/ru/litsenziya/", "primary_key": "fairpari лицензия curacao" },
+      "intent": "OGL/2024/1143/0865, SSL, RNG, responsible gaming",
+      "word_count": { "uz": "800-1000", "ru": "800-1000" },
+      "sections": ["hero", "license table", "RNG provably fair note", "responsible tools", "faq 4"],
+      "required_tables": ["license_facts"],
+      "must_numbers": ["OGL/2024/1143/0865"]
+    }
+  ],
+  "cross_locale_rules": {
+    "ru_is_not_translation": true,
+    "shared_facts": "identical numbers from fact_sheet",
+    "hreflang": { "uz": "uz-UZ", "ru": "ru-UZ" },
+    "disclaimer": {
+      "uz": "18+. fairpari-casino-uz.com — FairPari haqida mustaqil axborot portali. Rasmiy operator emas, depozit qabul qilmaydi.",
+      "ru": "18+. fairpari-casino-uz.com — независимый информационный портал о FairPari. Не оператор, депозиты не принимает."
+    }
+  },
+  "quality_bar_vs_references": {
+    "beat_fairpari_betting_com": [
+      "Точные цифры вместо yuzlab",
+      "Лицenziya + wagering в тексте",
+      "Нет keyword spam",
+      "Pros/cons блок"
+    ],
+    "beat_fairpari_uzbek_com": [
+      "Casino-only фокус без sport шума",
+      "Multipage depth — каждый intent на своём URL",
+      "Единый welcome 20.2M",
+      "RU locale полноценный, не калька"
+    ],
+    "beat_current_fairpari_casino_uz_com": [
+      "Убрать sport из landing-content-pack",
+      "Человеческие H2 вместо seo-block-N",
+      "Меньше повторов wagering",
+      "Вычитка RU редактурой"
+    ]
+  }
+}
